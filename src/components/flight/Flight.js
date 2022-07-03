@@ -1,4 +1,4 @@
-  function Flight({rocket: {mission_name, launch_year, links: {mission_patch_small}}}) {
+  function Flight({item: {mission_name, launch_year, links: {mission_patch_small}}}) {
 
     return (
         <div>

@@ -14,7 +14,7 @@ function Flights() {
     return (
         <div>
             {
-                flights.map((flight, index) => <Flight key={index} rocket={flight}/>)
+                flights.map((flight, index) => <Flight key={index} item={flight}/>)
             }
         </div>
     );
