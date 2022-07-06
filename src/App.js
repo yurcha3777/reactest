@@ -1,13 +1,13 @@
 import './App.css';
 import Users from "./components/users/Users";
-import {getuserPosts} from "./service/user.service";
+import {getUserPosts} from "./service/user.service";
 import {useState} from "react";
 import Posts from "./components/Posts/Posts";
 
 function App() {
     let [posts, setPosts] = useState([]);
     const lift = (id) => {
-        getuserPosts(id).then(({data}) => {
+        getUserPosts(id).then(({data}) => {
             setPosts([...data]);
         })
     }
@@ -15,7 +15,7 @@ function App() {
     return (
         <div>
             <div>
-                <Users lift={lift}/>
+                <Users  lift={lift}/>
             </div>
 
             <div>

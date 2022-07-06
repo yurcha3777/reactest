@@ -4,7 +4,7 @@ export default function User({user,lift}) {
       lift(user.id)
     }
     return (
-        <div>
+        <div key={user.id}>
             <h2>ID:{user.id}</h2>
             <h2>Name:{user.name}</h2>
            <button onClick={onclick}>posts</button>

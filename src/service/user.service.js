@@ -9,13 +9,13 @@ const getUsers = () => {
     return axiosInstance.get('').then(value => value)
 }
 
-const getuserPosts = (id) => {
-    return axiosInstance.get(`/${id}/posts`).then(value => value.data)
+const getUserPosts = (id) => {
+    return axiosInstance.get(`/${id}/posts`)
 }
 
 export {
     getUsers,
-    getuserPosts
+    getUserPosts
 }
 
 
