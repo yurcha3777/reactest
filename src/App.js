@@ -2,9 +2,10 @@ import './App.css';
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 
 import Layouts from "./layouts/Layouts";
-import TodosComponent from "./components/todos/TodosComponent";
-import AlbumsComponent from "./components/albums/AlbumsComponent";
-import CommentsComponent from "./components/comments/CommentsComponent";
+
+import TodosPage from "./pages/TodosPage";
+import AlbumsPage from "./pages/AlbumsPage";
+import CommentsPage from "./pages/CommentsPage";
 import PostsComment from "./components/posts/PostsComment";
 
 function App() {
@@ -12,9 +13,9 @@ function App() {
         <div>>
                 <Routes>
                     <Route path={'/'} element={<Layouts/>}>
-                        <Route path={'todos'} element={<TodosComponent/>}/>
-                        <Route path={'albums'} element={<AlbumsComponent/>}/>
-                        <Route path={'comments'} element={<CommentsComponent/>}>
+                        <Route path={'todos'} element={<TodosPage/>}/>
+                        <Route path={'albums'} element={<AlbumsPage/>}/>
+                        <Route path={'comments'} element={<CommentsPage/>}>
                             <Route path={':postId'} element={<PostsComment/>}/>
                         </Route>
                     </Route>

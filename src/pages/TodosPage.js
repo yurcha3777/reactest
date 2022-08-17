@@ -1,7 +1,9 @@
-export default function TodosPage() {
+import TodosComponent from "../components/todos/TodosComponent";
+
+export default function TodosPage(props) {
     return (
         <div>
-            Posts
+            <TodosComponent/>
         </div>
     );
 }

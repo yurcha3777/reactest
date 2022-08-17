@@ -1,7 +1,9 @@
-export default function AlbumComponent() {
+export default function AlbumComponent({item}) {
     return (
         <div>
-            Posts
+            <h2>{item.id} - {item.title}</h2>
+
+
         </div>
     );
 }
