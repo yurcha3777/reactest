@@ -9,7 +9,7 @@ export default function PostsComment() {
         fetch('https://jsonplaceholder.typicode.com/posts/' + postId)
             .then(value => value.json())
             .then(value => {setPosts([{...value}])
-            } )
+            })
     },[postId])
 
     return (
