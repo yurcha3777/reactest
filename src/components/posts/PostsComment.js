@@ -10,8 +10,7 @@ export default function PostsComment() {
     useEffect(()=>{
         fetch('https://jsonplaceholder.typicode.com/posts/' + postId)
             .then(value => value.json())
-            .then(value => {setPost(value)
-            })
+            .then(value => {setPost(value)})
     },[postId])
 
     return (

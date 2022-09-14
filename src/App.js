@@ -10,7 +10,7 @@ import PostsComment from "./components/posts/PostsComment";
 
 function App() {
     return (
-        <div>>
+        <div>
                 <Routes>
                     <Route path={'/'} element={<Layouts/>}>
                         <Route path={'todos'} element={<TodosPage/>}/>
