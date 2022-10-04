@@ -1,11 +1,6 @@
 import React, {Component} from 'react';
 
-
-
-class Posts extends Component {
-    constructor(props) {
-        super(props);
-    }
+class Comments extends Component {
     render() {
         return (
             <div>
@@ -15,4 +10,4 @@ class Posts extends Component {
     }
 }
 
-export {Posts};
+export default Comments;
