@@ -1,19 +1,14 @@
 import React, {Component} from 'react';
-import {getPosts} from "../../service";
 
 class Post extends Component {
     constructor(props) {
         super(props);
-        this.state = {props: []}
     }
-    componentDidMount() {
-        getPosts.getAll().then
-    }
-
     render() {
+        const {id,title} = this.props.post;
         return (
             <div>
-                
+                {id} - {title}
             </div>
         );
     }
