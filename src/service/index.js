@@ -1,1 +1,1 @@
-import * from './service.fetch';
+export * from './service.fetch';

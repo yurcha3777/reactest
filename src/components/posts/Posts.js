@@ -7,9 +7,10 @@ class Posts extends Component {
         super(props);
     }
     render() {
+            const {id,title} = this.props.post;
         return (
             <div>
-                
+                {id} - {title}
             </div>
         );
     }
