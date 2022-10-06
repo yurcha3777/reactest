@@ -3,12 +3,13 @@ import React, {Component} from 'react';
 class Post extends Component {
     constructor(props) {
         super(props);
+        this.post = this.props.item;
     }
+
     render() {
-        const {id,title} = this.props.post;
         return (
             <div>
-                {id} - {title}
+                {this.post.id} - {this.post.title}
             </div>
         );
     }

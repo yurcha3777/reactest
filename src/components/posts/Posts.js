@@ -1,22 +1,27 @@
 import React, {Component} from 'react';
-import {getPosts} from "../../service";
+
 import {Post} from "../post/Post";
 
+import {ServiceFetchPost} from "../../service";
+
 class Posts extends Component {
-    state = {posts: [],user: {}}
+
+    state = { posts: [] }
+
     constructor(props) {
         super(props);
     }
+
     componentDidMount() {
-        this.userApiService = new this.userApiService();
-        this.userApiService.getPosts().then(value => this.setState({users: value}))
+        this.serviceFetchPost = new ServiceFetchPost();
+        this.serviceFetchPost.getPosts().then(value => this.setState({posts: value}))
     }
 
     render() {
         return (
             <div>
                 {
-                    <Post item={this.state.posts} key={post.id}/>
+                    this.state.posts.map(value => <Post key={value.id} item={value}/>)
                 }
             </div>
         );

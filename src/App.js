@@ -1,13 +1,15 @@
 import './App.css';
 import {Posts} from "./components";
+import {Comments} from "./components";
 
 function App() {
-  return (
-    <div>
-    <Posts/>
+    return (
+        <div>
+            <Posts/>
+            <Comments/>
 
-    </div>
-  );
+        </div>
+    );
 }
 
 export default App;
