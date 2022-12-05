@@ -1,5 +1,7 @@
 import React from 'react';
+
 import {useDispatch} from "react-redux";
+
 import {count2Actions} from "../redux/slices";
 
 const Count2Tools = () => {
