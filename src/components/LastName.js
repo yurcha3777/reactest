@@ -3,7 +3,7 @@ import React from "react";
 const LastName = () => {
     return (
         <div>
-            Posts
+            Last
         </div>
     );
 }

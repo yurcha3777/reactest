@@ -3,7 +3,7 @@ import React from "react";
  const FirstName = () => {
     return (
         <div>
-            Posts
+            First
         </div>
     );
 }
