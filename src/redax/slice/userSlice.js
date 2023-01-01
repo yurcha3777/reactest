@@ -16,6 +16,6 @@ const initialState = {
 
     }
 });
-  {setFirstName} = userSlice.actions
+  const {reducer:userReducer,action:{setFirstName}} = userSlice
 export
 
